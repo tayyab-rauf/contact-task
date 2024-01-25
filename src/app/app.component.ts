@@ -19,22 +19,19 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.contactService.getContacts().subscribe((contacts: any[]) => {
       this.contacts = contacts;
-      console.log("🚀 ~ AppComponent ~ this.contactService.getContacts ~ this.contacts:", this.contacts)
     });
 
   }
 
-  test(id: number): void {
+  getContactDetail(id: number): void {
     this.contactService.getContactDetails(id).subscribe(details => {
       this.contactDetails = details;
-      console.log("🚀 ~ AppComponent ~ this.contactService.getContactDetails ~ this.contactDetails:", this.contactDetails)
     });
   }
 
   selectContact(contact: any) {
-    console.log("🚀 ~ AppComponent ~ selectContact ~ contact:", contact)
     this.contactId = contact.id;
-    this.test(this.contactId);
+    this.getContactDetail(this.contactId);
   }
 }
 
