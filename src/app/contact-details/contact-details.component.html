@@ -1,0 +1,187 @@
+<div class="sidebar-list-contacts" id="contacts">
+    <div class="top">
+      <div class="nav-toggle btn">
+        <span class="material-icons">
+          menu
+        </span>
+
+      </div>
+      <div class="title">Contacts</div>
+      <div class="navigation">
+        <a href="#" class="btn prev">
+          <span class="material-icons">
+            chevron_left
+          </span>
+        </a>
+        <a href="#" class="btn next">
+          <span class="material-icons">
+            chevron_right
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="body">
+      <div class="search">
+        <div class="label-text">Search for a contact</div>
+        <div class="input-search">
+          <input type="text" class="form-control" placeholder="Name, email or phone number">
+          <button class="btn-search">
+            <span class="material-icons">
+              search
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="list-users">
+          <ng-container *ngFor="let contact of contacts"> 
+          <div class="item active">
+          <div class="avatar">
+            <img  [src]="contact.avatar" >
+            <span class="dot -online"></span>
+          </div>
+          <div class="text-content">
+            <div class="name">{{contact.name}}</div>
+            <div class="pos">{{contact.position}}</div>
+          </div>
+          <div class="actions">
+            <button class="btn">
+              <span class="material-icons">
+                question_answer
+              </span>
+
+            </button>
+            <button class="btn">
+              <span class="material-icons">
+                phone
+              </span>
+
+            </button>
+            <button class="btn">
+              <span class="material-icons">
+                more_horiz
+              </span>
+            </button>
+          </div>
+        </div>
+    </ng-container>
+        <!-- <div class="item">
+          <div class="avatar">
+            <img src="assets/images/avatarr-default.jpeg" alt="">
+            <span class="dot -online"></span>
+          </div>
+          <div class="text-content">
+            <div class="name">Nicholas Gordon</div>
+            <div class="pos">Developer</div>
+          </div>
+          <div class="actions">
+            <button class="btn">
+              <span class="material-icons">
+                question_answer
+              </span>
+
+            </button>
+            <button class="btn">
+              <span class="material-icons">
+                phone
+              </span>
+
+            </button>
+            <button class="btn">
+              <span class="material-icons">
+                more_horiz
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="item">
+          <div class="avatar">
+            <img src="assets/images/avatarr-default.jpeg" alt="">
+            <span class="dot -online"></span>
+          </div>
+          <div class="text-content">
+            <div class="name">Nicholas Gordon</div>
+            <div class="pos">Developer</div>
+          </div>
+          <div class="actions">
+            <button class="btn">
+              <span class="material-icons">
+                question_answer
+              </span>
+
+            </button>
+            <button class="btn">
+              <span class="material-icons">
+                phone
+              </span>
+
+            </button>
+            <button class="btn">
+              <span class="material-icons">
+                more_horiz
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="item">
+          <div class="avatar">
+            <img src="assets/images/avatarr-default.jpeg" alt="">
+            <span class="dot -offline"></span>
+          </div>
+          <div class="text-content">
+            <div class="name">Nicholas Gordon</div>
+            <div class="pos">Developer</div>
+          </div>
+          <div class="actions">
+            <button class="btn">
+              <span class="material-icons">
+                question_answer
+              </span>
+
+            </button>
+            <button class="btn">
+              <span class="material-icons">
+                phone
+              </span>
+
+            </button>
+            <button class="btn">
+              <span class="material-icons">
+                more_horiz
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="item">
+          <div class="avatar">
+            <img src="assets/images/avatarr-default.jpeg" alt="">
+            <span class="dot -online"></span>
+          </div>
+          <div class="text-content">
+            <div class="name">Nicholas Gordon</div>
+            <div class="pos">Developer</div>
+          </div>
+          <div class="actions">
+            <button class="btn">
+              <span class="material-icons">
+                question_answer
+              </span>
+
+            </button>
+            <button class="btn">
+              <span class="material-icons">
+                phone
+              </span>
+
+            </button>
+            <button class="btn">
+              <span class="material-icons">
+                more_horiz
+              </span>
+            </button>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  
